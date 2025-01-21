@@ -32,6 +32,20 @@ External Requirements:
   - If you want to write Golang, you will need `go`
   - etc.
 
+LLVM includes the Clang compiler, which works well with Treesitter.
+```PowerShell
+winget install --id LLVM.LLVM --source winget
+```
+After Installation
+1. Add the compiler's binary directory to your system `PATH`
+```
+C:\Program Files\LLVM\bin
+```
+2. Verify the installation by checking the compiler version:
+```PowerShell
+clang --version
+```
+
 > **NOTE**
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
